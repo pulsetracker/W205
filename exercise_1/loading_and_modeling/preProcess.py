@@ -8,7 +8,7 @@ import os
 import os.path
 
 inputPath = '/home/james/W205/W205/workingData/'
-inputFiles = ['hospitals.csv','readmissions.csv','surveys.csv','measureDates.csv']
+inputFiles = ['hospitals.csv','readmissions.csv','surveys.csv','measureDates.csv','effective_care.csv']
 
 for thisCsv in inputFiles:
 

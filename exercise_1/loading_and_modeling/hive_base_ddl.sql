@@ -3,6 +3,7 @@ DROP TABLE hospitals;
 DROP TABLE measureDates;
 DROP TABLE readmissions;
 DROP TABLE surveys;
+DROP TABLE effective_care;
 
 CREATE EXTERNAL TABLE hospitals
 (Provider_ID VARCHAR(500),
@@ -15,7 +16,7 @@ Hospital_County VARCHAR(500),
 Hospital_Phone VARCHAR(500),
 Hospital_Type VARCHAR(500),
 Hospital_Ownership VARCHAR(500),
-Emergency_Servicds VARCHAR(500))
+Emergency_Services VARCHAR(500))
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
 STORED AS TEXTFILE;
 
@@ -52,7 +53,7 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY  '\t'
 STORED AS TEXTFILE;
 
 CREATE EXTERNAL TABLE surveys
-(Provider_Number VARCHAR(500),
+(Provider_ID VARCHAR(500),
 Hospital_Name VARCHAR(500),
 Address VARCHAR(500),
 City VARCHAR(500),
@@ -85,7 +86,28 @@ Overall_Rating_of_Hospital_Improvement_Points VARCHAR(500),
 Overall_Rating_of_Hospital_Dimension_Score VARCHAR(500),
 HCAHPS_Base_Score VARCHAR(500),
 HCAHPS_Consistency_Score VARCHAR(500))
-ROW FORMAT DELIMITED FIELDS TERMINATED BY  '	'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY  '\t'
+STORED AS TEXTFILE;
+
+
+CREATE EXTERNAL TABLE effective_care
+(Provider_ID VARCHAR(500),
+Hospital_Name VARCHAR(500),
+Address VARCHAR(500),
+City VARCHAR(500),
+State VARCHAR(500),
+ZIP_Code VARCHAR(500),
+County_Name VARCHAR(500),
+Phone_Number VARCHAR(500),
+Condition VARCHAR(500),
+Measure_ID VARCHAR(500),
+Measure_Name VARCHAR(500),
+Score VARCHAR(500),
+Sample VARCHAR(500),
+Footnote VARCHAR(500),
+Measure_Start_Date VARCHAR(500),
+Measure_End_Date VARCHAR(500))
+ROW FORMAT DELIMITED FIELDS TERMINATED BY  '\t'
 STORED AS TEXTFILE;
 
 
@@ -93,3 +115,4 @@ LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/da
 LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/readmissions_p.csv" INTO TABLE readmissions;
 LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/measureDates_p.csv" INTO TABLE measureDates;
 LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/surveys_p.csv" INTO TABLE surveys;
+LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/effective_care_p.csv" INTO TABLE effective_care;
