@@ -16,7 +16,7 @@ CREATE TABLE RatingComp AS
 SELECT ecscore, ecvar, sumscore
 FROM RatingVsSurvey;
 
-INSERT OVERWRITE LOCAL DIRECTORY  '/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/RatingComp.txt'
+INSERT OVERWRITE LOCAL DIRECTORY  '/root/W205/exercise_1/loading_and_modeling/dataLake/RatingComp.txt'
 ROW FORMAT DELIMITED 
 FIELDS TERMINATED BY ',' 
 select * from RatingComp;

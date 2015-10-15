@@ -1,8 +1,16 @@
 
 import numpy as np
 import pylab as plt
+####################################################################################
+# calcCorrelation.py
+#
+# Calculates coefficients of correlations and creates plots 
+# on questions asked in Exercise 1 of W205-2 (Fall, 2015)
+#
+# by James King
+####################################################################################
 
-iFile = open('/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/RatingComp.txt/000000_0')
+iFile = open('/root/W205/exercise_1/loading_and_modeling/dataLake/RatingComp.txt/000000_0')
 lines = iFile.readlines()
 
 ecscore = []
