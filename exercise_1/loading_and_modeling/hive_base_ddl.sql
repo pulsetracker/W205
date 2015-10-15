@@ -1,9 +1,9 @@
 
-DROP TABLE hospitals;
-DROP TABLE measureDates;
-DROP TABLE readmissions;
-DROP TABLE surveys;
-DROP TABLE effective_care;
+DROP TABLE hospitals PURGE;
+DROP TABLE measureDates PURGE;
+DROP TABLE readmissions PURGE;
+DROP TABLE surveys PURGE;
+DROP TABLE effective_care PURGE;
 
 CREATE EXTERNAL TABLE hospitals
 (Provider_ID VARCHAR(500),
@@ -111,8 +111,8 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY  '\t'
 STORED AS TEXTFILE;
 
 
-LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/hospitals_p.csv" INTO TABLE hospitals;
-LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/readmissions_p.csv" INTO TABLE readmissions;
-LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/measureDates_p.csv" INTO TABLE measureDates;
-LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/surveys_p.csv" INTO TABLE surveys;
-LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/effective_care_p.csv" INTO TABLE effective_care;
+LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/hospitals_p.csv" OVERWRITE INTO TABLE hospitals;
+LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/readmissions_p.csv" OVERWRITE INTO TABLE readmissions;
+LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/measureDates_p.csv" OVERWRITE INTO TABLE measureDates;
+LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/surveys_p.csv" OVERWRITE INTO TABLE surveys;
+LOAD DATA LOCAL INPATH "/home/james/W205/W205/exercise_1/loading_and_modeling/dataLake/effective_care_p.csv" OVERWRITE INTO TABLE effective_care;

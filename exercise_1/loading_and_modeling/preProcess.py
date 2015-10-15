@@ -24,7 +24,7 @@ for thisCsv in inputFiles:
 	isHeader = True
 	for line in lines:
 		if not isHeader:
-			modLine = line.strip('"').replace('","','\t')
+			modLine = line.strip('"').replace('","','\t').replace('"','') 
 			oFile.write(modLine)
 		else:
 			header = line
