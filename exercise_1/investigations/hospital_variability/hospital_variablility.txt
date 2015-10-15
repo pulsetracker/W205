@@ -1,0 +1,31 @@
+Original Question:
+
+Which procedures have the greatest variablility between hospitals?
+
+Conclusion:
+
+The following procedures are the most variable outcomes across hospitals:
+
+Count   Average StDev	Procedure Name
+48888	274.0	93.0	ED1
+48706	99.0	61.0	ED2
+46606	145.0	41.0	OP 18
+5810	61.0	35.0	Median Time to Transfer to Another Facility for Acute Coronary Intervention
+13412	68.0	22.0	Head CT results
+12306	84.0	21.0	Thrombolytic Therapy
+1036	71.0	18.0	Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival
+44296	55.0	18.0	Median time to pain med
+8092	88.0	18.0	Discharge instructions
+46634	28.0	17.0	Door to diagnostic eval
+
+
+Appropriateness & Support:
+
+In this case, the variablility between procedures is almost nonexistent when measured by the readmission score metric.  
+Thus, using only the effective care metric is appropriate in this situation.   
+
+As shown in the table, the effective care score's standard deviation by procedure indicates a few procedures which are particularly 
+variable (the emergency room ones, in particular) and they "normalize" to being similar to one-another.  
+
+
+

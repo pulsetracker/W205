@@ -1,0 +1,43 @@
+Original Question:
+
+What hospitals are models of high-quality care—that is, which hospitals have the most consistently high scores for a
+variety	of procedures?	
+  
+Conclusion:
+The following hospitals are models of high-quality care:
+Based on Effective Care Score
+Count	AvScore Hospital Name
+96	184.0	HOSP COMUNITARIO BUEN SAMARITANO
+42	153.0	COLORADO CANYONS HOSPITAL AND MEDICAL CENTER
+504	139.0	NEWARK BETH ISRAEL MEDICAL CENTER
+224	138.0	HOSPITAL HERMANOS MELENDEZ INC
+70	136.0	BEAR VALLEY COMMUNITY HOSPITAL
+196	136.0	HOSPITAL MENONITA DE CAYEY
+84	133.0	REDWOOD MEMORIAL HOSPITAL
+70	132.0	JOHN C FREMONT HEALTHCARE DISTRICT
+84	131.0	ZUNI COMPREHENSIVE COMMUNITY HEALTH CENTER
+266	130.0	ROSELAND COMMUNITY HOSPITAL
+
+Based on Readmissions Score
+Count	AvScore Hospital Name
+47	4.0	LAFAYETTE GENERAL SURGICAL HOSPITAL
+47	4.0	PHYSICIANS' MEDICAL CENTER LLC
+47	4.0	FAIRWAY MEDICAL CENTER
+47	4.0	DOCTORS HOSPITAL OF WEST COVINA, INC
+47	4.0	OUACHITA COMMUNITY HOSPITAL
+47	5.0	EDGEWOOD SURGICAL HOSPITAL
+94	7.0	MCBRIDE CLINIC ORTHOPEDIC HOSPITAL,  L L C
+94	7.0	HOSPITAL FOR SPECIAL SURGERY
+94	7.0	MOUNT CARMEL NEW ALBANY SURGICAL HOSPITAL
+94	7.0	HOAG ORTHOPEDIC INSTITUE
+
+
+Appropriateness & Support:
+
+There are two important metrics for "goodness" of a hospital which are based on different things.   
+Since the ultimate purpose of this list is unknown, it is useful to provide end users both lists
+so they can decide which is better for themselves.  Since there is no overlap between lists, they're
+clearly measuring different aspects of the hospitals.
+
+
+

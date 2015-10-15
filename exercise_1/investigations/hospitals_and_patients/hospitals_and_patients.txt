@@ -1,0 +1,22 @@
+Original Question:
+
+Are average scores for hospital quality or procedural variablility correlated with patient survey responses?
+
+Conclusion:
+
+Short answer:  No.
+
+Long answer, there is essentially no correlation between effective care metrics and patient survey metrics (Coefficient
+of correlation ~ -0.29) and there is very little correlation between variability metrics and patient survey metrics (Coeff. of 
+correllatio = ~ -0.41).  There appears to be a subset, though, of hospitals which cluster around very low variability and very high 
+patient survey metrics (see correlations.png)
+
+
+Appropriateness & Support:
+
+The coefficient of correlation is the standard quantification of the idea of correlatedness in this kind of data.   If the data were
+correlated, the coefficient would be near +/- 1.   Completely uncorrelated data will give a coefficient near zero.   Since both of these 
+metrics had coefficients near zero there is little correlation.  Secondarily, a quick glance at the data plotted against each other shows
+no obvious correlation.
+
+

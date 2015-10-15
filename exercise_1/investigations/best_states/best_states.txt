@@ -1,0 +1,32 @@
+Original Question:
+
+Which states are models of high-quality care?
+
+Conclusion:
+
+The following states are models of high-quality care:
+
+Based on Effective Care Score
+Count	AvScore	State
+3612	103.0	DC
+3164	100.0	DE
+18102	100.0	MD
+73346	97.0	NY
+32452	97.0	NJ
+137816	96.0	CA
+11088	96.0	NV
+13608	95.0	CT
+27552	95.0	MA
+8792	95.0	NH
+
+
+
+Appropriateness & Support:
+
+In this case, the readmissions score doesn't vary at all between the top hospitals, which removes most of its utility.
+Thus, states were evaluated on effective care scores alone.
+
+This metric is appropriate because it is measured across many procedures and many hospitals within the states.
+
+
+
